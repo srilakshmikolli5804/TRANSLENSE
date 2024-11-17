@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import RegistrationPage from './pages/RegistrationPage';
-import './index.css';  // Import Tailwind or any other global CSS
+import './index.css'; 
 
 const App: React.FC = () => {
   return (

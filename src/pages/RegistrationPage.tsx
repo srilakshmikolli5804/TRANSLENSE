@@ -52,19 +52,19 @@ const RegistrationPage: React.FC = () => {
   };
 
   const handleCompleteRegistration = () => {
-    setIsSubmitted(true); // Show thank you message
+    setIsSubmitted(true); // thank you message
   };
 
   const validateStep = (): boolean => {
     const stepErrors: { [key: string]: string } = {};
     
-    // Define required fields for each step
+    // required fields for each step
     const requiredFields: { [key: number]: string[] } = {
       1: ['businessName', 'country', 'state', 'city', 'openingTime', 'closingTime'],
       2: ['email', 'mobile', 'profilePicture'],
       3: ['panNumber', 'aadharNumber'],
       5: ['bankAccount', 'ifscCode'],
-      6: ['serviceInfo'], // Added serviceInfo to required fields for Step 6
+      6: ['serviceInfo'], 
     };
     
     // Check if required fields are filled for the current step
@@ -76,7 +76,7 @@ const RegistrationPage: React.FC = () => {
         stepErrors[field] = `${field} is required`;
       }
     
-      // For file types like profilePicture, check if it's null
+      // file types like profilePicture, check if it's null
       if (field === 'profilePicture' && value === null) {
         stepErrors[field] = 'Profile picture is required';
       }
@@ -96,8 +96,8 @@ const RegistrationPage: React.FC = () => {
       }
     }
   
-    setErrors(stepErrors); // Set the errors state
-    return Object.keys(stepErrors).length === 0; // Return true if no errors
+    setErrors(stepErrors); 
+    return Object.keys(stepErrors).length === 0; 
   };
   
 

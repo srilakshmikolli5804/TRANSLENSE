@@ -11,7 +11,7 @@ const Step1BusinessInfo = ({
   }: any) => {
     return (
       <div>
-        {/* Step 1 Title */}
+        
         <h2 className="text-2xl font-bold mb-4">Business Information</h2>
   
         {/* Business Information Fields */}

@@ -1,4 +1,4 @@
-// src/components/OTPInput.tsx
+
 
 import React, { useState } from 'react';
 
